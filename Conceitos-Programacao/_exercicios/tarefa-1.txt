@@ -1,0 +1,60 @@
+#### Tarefa: MUDAR UM PNEU
+
+##### Dados de Entrada
+- Pneu Novo 
+- Pneu Furado 
+- Macaco 
+- Carro 
+- Ferramentas
+- Triangulo
+
+##### Saidas 
+- Pneu Trocado 
+- Pneu furado Arrumado
+- Ferramentas arrumadas
+
+##### Sequenccia Algoritmica 
+1. Parar o Carro num local seguro 
+2. desligar Carro 
+3. Se estiver em zona publica, ligar luzes de emergencia 
+4. tirar O cinta de segurança 
+5. vestir o colete que esta na porta 
+6. abrir a porta 
+7. sair do carro 
+8. fechar porta do carro
+9. deslocar-me a mala do carro 
+10. abrir mala 
+11. retirar o triangulo 
+12. colocar o triangulo a 30 metros do carro
+13. Retira da mala a chave 
+14. identificar e dirigir-me ao pneu furado 
+15. Desapertar parcialmente os parafudos do pneu furado 
+16. dirigir-me a mala , retirar o macaco 
+17. colocar o macaco
+18. levantar o carro 
+19. desparetar. eremover os parafusos do pneu furado 
+20. remover o pneu furado 
+21. retirar pneu novo
+22. arrrumar o pneu furado
+23. colocar o pneu novo
+24. por e apertar os parafusos 
+25. baixar o macaco 
+26. reforçar aperto dos parafusos
+27. retirar e arrumar o macaco 
+28. arrumar a chave de parafusos 
+29. retirar o triangulo
+30. arrumar o triangulo 
+31. fechar a mala do carro 
+32. abrir a porta do carro 
+33. entrar no carro 
+34. fechar a porta
+35. tirar o colete e arrumar na porta 
+36. desligar luzes de emergencia 
+37. colocar cinto de segurança
+38. ligar o carrro 
+39. seguir viagem
+
+
+
+
+
