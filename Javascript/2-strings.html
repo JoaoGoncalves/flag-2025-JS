@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCTIPT - Intro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> JS - Tipo Dados - Strings </h1>
+    <main>
+        <section id="output"></section>
+    </main>
+    
+    
+    <script>
+        /* string conjunto de caracteres */
+        let nome = "<b>João";
+        let apelido = 'Gonçalves</b>';
+        let nacionalidade = `Portuguesa`; //backticks, template literals - ES6
+
+        // ES5
+        let nomeCompleto = nome + " " + apelido;
+        let frase = "<h3> O Srº " + nome + " " + apelido + " tem a nacionalidade " + nacionalidade + ".</h3>";
+
+        // ES6 - template literal - multiline strings
+        let outraFrase = `
+            <h2> O Srº ${nome} ${apelido} </h2>
+            <h3> Tem a nacionalidade ${nacionalidade}</h3>
+            <hr>
+        `;
+
+        // escrever dentro da section output
+       let output = document.getElementById('output');
+       output.innerHTML = outraFrase;
+    </script>
+</body>
+</html> 

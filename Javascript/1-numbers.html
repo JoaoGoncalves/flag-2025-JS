@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCTIPT - Intro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> JS - DADOS - Numbers</h1>
+    <main>
+        <section id="output"></section>
+    </main>
+    
+    
+    <script>
+        /* tipos dados primitivos - Numbers */
+        var anoAtual; // declarar variável
+        let dataNascimento = 1980; // declarar variável e atribuir valor
+        let idade, resultado, x = 15 , y = 4;
+        
+        anoAtual = 2025;
+
+        idade = anoAtual - dataNascimento;
+
+        /* operadores aritmeticos */
+        resultado = x + y;
+        resultado = x - y;
+        resultado = x * y;
+        resultado = x / y;
+        resultado = x % y; // resto da divisão
+        resultado = x ** y; // exponenciação - ES9 
+
+        /* incremento e decremento */
+        x = x + 1;
+        console.log(x)
+        x += 1;
+        console.log(x)
+        x += 5;
+        console.log(x)
+        x ++;
+        console.log(x)
+        ++ x;
+        console.log(x)
+
+        x -= 5;
+        x --;
+
+        //x = x * 3;
+        x *= 3;
+
+        // atencao as ordens das operacoes
+        resultado = (2 + 3) * 2 ;
+
+        console.log(++y);
+        console.log(y);
+
+
+        // escrever dentro da section output
+       let output = document.getElementById('output');
+       output.innerHTML = resultado;
+    </script>
+</body>
+</html>
