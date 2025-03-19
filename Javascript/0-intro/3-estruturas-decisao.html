@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCTIPT - Intro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> JS - Booleanos - if/else - switch </h1>
+    <main>
+        <section id="output"></section>
+    </main>
+    
+    
+    <script>
+        let texto = "";
+        /* Valores Booleanos, utilizados em estruturas de decisao */
+        // Operadores de Comparação
+        // < , > , <= , >= , == , ===, != , !==
+
+        // IF / ELSE
+        let saldo = 400;
+
+        /* if (saldo > 700) { // se verdadeiro
+            texto = "Comprar uma boa prenda."
+        } */
+
+       /*  if (saldo > 700) {
+            texto = "Comprar uma boa prenda."
+        } else {
+            texto = "Comprar uma prenda da treta."
+        } */
+
+        //// Operadores Ternários
+        // (condicao) ? se verdadeira : se falsa
+        //(saldo > 700) ? texto='boa prenda' : texto='prenda da treta';
+
+        /* if (saldo > 700) {
+            texto = "Comprar uma boa prenda.";
+        } else if (saldo > 500) {
+            texto = "Comprar uma prenda da treta."
+        } else {
+            texto = " vai mas é trabalhar..."
+        } */
+
+        saldo = 500;
+        let periodo = 'dia do pai';
+
+        /* if ( (saldo > 700) && (periodo == 'dia do pai' )) {
+            texto = "Comprar uma boa prenda."
+        } */ 
+        if ( (saldo > 700) || (periodo == 'dia do pai' )) {
+            texto = "Comprar uma boa prenda."
+        } 
+
+        /* Algebra Booleana 
+            V && V = V
+            V && F = F
+            F && F = F
+
+            F || F = F
+            F || V = V
+            V || V = V
+        */
+
+
+        /* SWITCH */
+        //let lingua = 'fr';
+        let lingua = prompt('Qual a lingua?')
+
+        switch (lingua) {
+            case 'pt':
+                texto = 'Bom Dia...'
+                break;
+            case 'en':
+                texto = 'Good Morning...'
+                break;
+            case 'fr':
+                texto = 'Bonjour...'
+                break;
+            case 'es':
+                texto = 'Hola...'
+                break;
+            default:
+                texto = 'ligua desconhecida...'
+                break;
+        }
+
+
+
+        // escrever dentro da section output
+       let output = document.getElementById('output');
+       output.innerHTML = texto;
+    </script>
+</body>
+</html>

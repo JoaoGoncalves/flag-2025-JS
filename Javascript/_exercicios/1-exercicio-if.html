@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCTIPT - Intro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> JS - </h1>
+    <main>
+        <section id="output"></section>
+    </main>
+    
+    
+    <script>
+        let texto = '';
+
+        let nome = prompt('Qual o seu nome?');
+        let apelido = prompt('Qual o seu apelido?');
+
+        texto = `
+            <h3> Olá Sr. ${nome} ${apelido}. </h3>
+        `;
+
+
+        // escrever dentro da section output
+       let output = document.getElementById('output');
+       output.innerHTML = texto;
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCTIPT - Intro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> JS - exercicio 2 IF</h1>
+    <main>
+        <section id="output"></section>
+    </main>
+    
+    
+    <script>
+        /* 
+        Com a ajuda do método prompt pergunte por dois números ao utilizador, apresente no documento o resultado da soma, subtracção, multiplicação e divisão. (usar casting: Number(prompt(‘pergunta’)), para converter Strings em Numbers)
+        */
+
+        let texto = '';
+
+        let num1 = Number(prompt(" Qual o 1º numero?"));
+        let num2 = Number(prompt(" Qual o 2º numero?"));
+
+        let soma          = num1 + num2;
+        let subtraccao    = num1 - num2;
+        let multiplicacao = num1 * num2;
+        let divisao       = num1 / num2;
+
+        texto = `
+            <h1> Exercicio Calculadora </h1>
+            <p> Soma:          ${num1} + ${num2} = ${soma} </p>
+            <p> Subtracção:    ${num1} - ${num2} = ${subtraccao} </p>
+            <p> Multiplicação: ${num1} * ${num2} = ${multiplicacao} </p>
+            <p> Divisão:       ${num1} / ${num2} = ${divisao.toFixed(2)} </p>
+        `;
+
+
+
+        
+
+
+        // escrever dentro da section output
+       let output = document.getElementById('output');
+       output.innerHTML = texto;
+    </script>
+</body>
+</html>

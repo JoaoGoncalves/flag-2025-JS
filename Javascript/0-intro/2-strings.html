@@ -15,24 +15,42 @@
     
     <script>
         /* string conjunto de caracteres */
-        let nome = "<b>João";
-        let apelido = 'Gonçalves</b>';
+        let nome = "João";
+        let apelido = 'Gonçalves';
         let nacionalidade = `Portuguesa`; //backticks, template literals - ES6
 
         // ES5
         let nomeCompleto = nome + " " + apelido;
-        let frase = "<h3> O Srº " + nome + " " + apelido + " tem a nacionalidade " + nacionalidade + ".</h3>";
+        //let frase = "<h3> O Srº " + nome + " " + apelido + " tem a nacionalidade " + nacionalidade + ".</h3>";
+        let frase = "<h3> O Srº ";
+            frase += nome + " ";
+            frase += apelido + " tem a nacionalidade ";
+            frase += nacionalidade + ".</h3>";
+
 
         // ES6 - template literal - multiline strings
         let outraFrase = `
-            <h2> O Srº ${nome} ${apelido} </h2>
+            <h2> O Srº ${nome} ${apelido} - ${5 + 8} </h2>
             <h3> Tem a nacionalidade ${nacionalidade}</h3>
             <hr>
         `;
 
+
+
+        let texto = `
+            <h1>${'Olá ' + nomeCompleto } </h1>
+            <p> Numero de caracteres: ${nomeCompleto.length} </p>
+            <p> ${nomeCompleto.toUpperCase()} </p>
+            <p> ${nomeCompleto.toLowerCase()} </p>
+            <p> ${nome.charAt(2)} </p>
+            <p> ${nomeCompleto.indexOf('ã')} </p>
+            <p> ${nomeCompleto.search('x')} </p>
+        `;
+
+
         // escrever dentro da section output
        let output = document.getElementById('output');
-       output.innerHTML = outraFrase;
+       output.innerHTML = texto;
     </script>
 </body>
 </html> 

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios - INTRO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Exercicos JS -INTRO</h1>
+    <main>
+        <section>
+            <p id="output"></p>
+        </section>
+    </main>
+
+    <script>
+        /* Perguntar por dois números, e por um operador numérico (+,-,*,/), apresentar o resultado consoante o operador introduzido.
+ */
+
+        let texto = '';
+
+        let num1 = Number(prompt(" Qual o 1º numero?"));
+        let operador = prompt("Qual o Operador (+, -, x, :) ? ");
+        let num2 = Number(prompt(" Qual o 2º numero?"));
+
+        switch (operador) {
+            case '+':
+                texto = `${num1} + ${num2} = ${num1 + num2}`;
+                break;
+            case '-':
+                texto = `${num1} - ${num2} = ${num1 - num2}`;
+                break;
+            case 'x':
+                texto = `${num1} x ${num2} = ${num1 * num2}`;
+                break;
+            case ':':
+                texto = `${num1} : ${num2} = ${num1 / num2}`;
+                break;
+            default:
+                texto = 'Operador Desconhecido...'
+                break;
+        }
+       
+
+        
+        ///escrever no paragrafo 
+        let output = document.getElementById('output');
+        output.innerHTML = texto;
+
+    </script>
+</body>
+</html>
