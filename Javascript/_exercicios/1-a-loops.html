@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCTIPT - Intro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> JS - </h1>
+    <main>
+        <section id="output"></section>
+    </main>
+    
+    
+    <script>
+        /* 1 - pergunte por dois numeros e apresente:
+ a)a soma de todos os numeros intermédios, indicando no final quantos numeros foram somados
+ */
+        let texto = '';
+
+        let num1 = Number( prompt('Inserir 1º numero (menor)'));
+        let num2 = Number( prompt('Inserir 2º numero (maior)'));
+
+        let soma = 0;
+        let contadorNumeros = 0;
+
+        let i = num1 + 1;
+
+        /* while (i < num2){
+            //debugger;
+
+            soma += i;
+            contadorNumeros ++;
+            i ++;
+        } */
+
+        for( i ; i < num2 ; i++){
+            soma += i;
+            contadorNumeros ++;
+        }
+
+        texto = `
+            <h3> A soma dos numeros é : ${soma} </h3>
+            <p> formaa somados : ${contadorNumeros} </>
+        `;
+
+
+        // escrever dentro da section output
+       let output = document.getElementById('output');
+       output.innerHTML = texto;
+    </script>
+</body>
+</html>

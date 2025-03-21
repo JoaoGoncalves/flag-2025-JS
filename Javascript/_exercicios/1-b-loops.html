@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCTIPT - Intro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> JS - </h1>
+    <main>
+        <section id="output"></section>
+    </main>
+    
+    
+    <script>
+        /* 
+        b) apresenta a lista de numeros pares entre dois numeros inseridos
+ */
+        let texto = '';
+
+        // demonstracao strict equality
+        /* let x = 5;
+        let y = '5';
+
+        console.log('comparacao: ', x == y);
+        console.log('comparacao (strict equality): ', x === y); */
+
+
+        let num1 = Number( prompt('Inserir 1º numero (menor)'));
+        let num2 = Number( prompt('Inserir 2º numero (maior)'));
+
+        let menor = (num1 < num2) ? num1 : num2; 
+        let maior = (num1 > num2) ? num1 : num2;  
+
+        while (menor < maior){
+            if (menor % 2 == 0) {
+                texto += `<p> ${menor} </p>`;
+            }
+            menor++;
+        }
+
+
+        // escrever dentro da section output
+       let output = document.getElementById('output');
+       output.innerHTML = texto;
+    </script>
+</body>
+</html>

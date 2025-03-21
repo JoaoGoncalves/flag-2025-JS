@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCTIPT - Intro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> JS - </h1>
+    <main>
+        <section id="output"></section>
+    </main>
+    
+    
+    <script>
+        /* 1 - pergunte por dois numeros e apresente:
+ a)a soma de todos os numeros intermédios, indicando no final quantos numeros foram somados
+ */
+        let texto = '';
+
+        let num1 = Number( prompt('Inserir 1º numero (menor)'));
+        let num2 = Number( prompt('Inserir 2º numero (maior)'));
+
+        // verificar qul o menor e o maior
+        /* let menor, maior;
+        if(num1 < num2){
+            menor = num1;
+            maior = num2;
+        }
+
+        if(num1 > num2){
+            menor = num2;
+            maior = num1;
+        } */
+
+        //Operador ternario (if)
+       let menor = (num1 < num2) ? num1 : num2; 
+       let maior = (num1 > num2) ? num1 : num2; 
+
+        let soma = 0;
+        let contadorNumeros = 0;
+
+        let i = menor + 1;
+
+        while (i < maior){
+
+            soma += i;
+            contadorNumeros ++;
+            i ++;
+        }
+
+     
+
+        texto = `
+            <h3> A soma dos numeros intermédios entre ${num1} e ${num2} é : ${soma} </h3>
+            <p> foram somados : ${contadorNumeros} numeros</>
+        `;
+
+
+        // escrever dentro da section output
+       let output = document.getElementById('output');
+       output.innerHTML = texto;
+    </script>
+</body>
+</html>
