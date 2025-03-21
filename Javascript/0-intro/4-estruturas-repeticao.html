@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCTIPT - Intro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> JS - </h1>
+    <main>
+        <section id="output"></section>
+    </main>
+    
+    
+    <script>
+        let texto = '';
+
+        /* estruras de repeticao */
+
+        //FOR
+        let  i = 0;
+        for ( i ; i <= 10 ; i++ ) {
+            texto += `<p> ${i} </p>`
+        }
+        /* for (let  i = 10 ; i >= 0 ; i -= 2 ) {
+            texto += `<p> ${i} </p>`
+        } */
+
+        //WHILE
+        /* let i = 0; 
+
+        while( i <= 10){
+            texto += `<p> ${i} </p>`;
+            i++;
+        } */
+
+        // Do while
+        /* let i = 0;
+
+        do {
+            texto += `<p> ${i} </p>`;
+            i++;
+        } while (i <= 10) */
+
+
+
+
+        // escrever dentro da section output
+       let output = document.getElementById('output');
+       output.innerHTML = texto;
+    </script>
+</body>
+</html>
